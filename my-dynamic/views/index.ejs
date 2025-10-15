@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=storeName %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 style="color: aqua;">Book Store</h1>
+    <p>Hello <%=storeName %> Welcome All..</p>
+    <% for (const obj of books){%>
+      <h2><%=obj.title %></h2>
+      <h3><%= obj.author %></h3>
+    <%  } %>
+<script>
+  console.log("welcome to the book store");
+  
+</script>
+    
+    
+  </body>
+</html>
